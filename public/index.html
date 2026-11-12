@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lukasProxy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #4da6ff;
+        }
+        form {
+            display: flex;
+            width: 90%;
+            max-width: 600px;
+            gap: 10px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 14px;
+            border-radius: 6px;
+            border: 1px solid #333;
+            background-color: #2a2a2a;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+        }
+        input[type="text"]:focus {
+            border-color: #4da6ff;
+        }
+        button {
+            padding: 14px 24px;
+            background-color: #4da6ff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background-color: #0076e6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>lukasProxy</h1>
+    
+    <form action="/proxy" method="GET">
+        <input type="text" name="url" placeholder="Paste link here (e.g., example.com)" required autocomplete="off">
+        <button type="submit">Open</button>
+    </form>
+
+</body>
+</html>
