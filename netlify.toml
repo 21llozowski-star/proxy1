@@ -3,7 +3,7 @@
   functions = "netlify/functions"
 
 [functions]
-  external_node_modules = ["express", "axios"]
+  external_node_modules = ["express", "axios", "cheerio"]
   node_bundler = "esbuild"
 
 [[redirects]]
